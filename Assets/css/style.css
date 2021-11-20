@@ -1,0 +1,413 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#header video{
+    background-color: aquamarine;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+.header-bar{
+    font-size: 18px;
+}
+.icon{
+    background: transparent;
+}
+.contact-phone{
+    padding: 18px;
+    color: white;
+    font-weight: 800;
+    position: absolute;
+    top: 0;
+    left: 350px;
+}
+.contact-phone a{
+    color: white;
+    text-decoration: none;
+}
+.contact-list:hover a{
+    color: yellow;
+}
+
+.login{
+    position: absolute;
+    top: 0;
+    right: 350px;
+}
+.login li{
+    list-style-type: none;
+    padding: 18px;
+    display: inline-block;
+}
+.login li a{
+    color: white;
+    text-decoration: none;
+}
+.login i{
+    color: white;
+    padding: 18px;
+}
+.login i:hover{
+    color: yellow;
+}
+.login li:hover a{
+    color: yellow;
+}
+.header-menu{
+    position: absolute;
+    font-size: 22px;
+    top: 54px;
+    width: 100%;
+}
+.header-menu li{
+    padding: 12px;
+    list-style-type: none;
+}
+.header-menu li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.main-menu{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    margin-top: 24px;
+}
+.main-menu ul{
+    display: flex;
+    flex: auto;
+    justify-content: center;
+}
+.main-menu span{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 68px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.submenu{
+    position: absolute;
+    flex-direction: column;
+    transform: translateX(-30%);
+    color: white;
+}
+.menu1 li:hover .submenu{
+    display: block;
+}
+.menu1 .submenu {
+    display: none;
+}
+.submenu > li:hover > a,
+.menu1 > li:hover > a,
+.menu2 > li:hover > a{
+    color: yellow;
+    cursor: pointer;
+}
+.tour-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 48px;
+    height: 400px;
+}
+.tour-info img{
+    width: 100%;
+    height: 350px;
+}
+.tour1, .tour2, .tour3{
+    width: 32%;
+}
+.tour-info .info{
+    position: absolute;
+    color: white;
+    padding: 24px;
+    top: 250px;
+}
+.info .tour-name{
+    font-size: 32px;
+    padding-bottom: 8px;
+}
+
+.info .tour-start a,
+.info .tour-time a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.tour span{
+    font-size: 38px;
+    padding: 16px;
+}
+.tour > a{
+    position: absolute;
+    right: 0;
+    color: #898989;
+    text-decoration: none;
+    padding: 12px;
+}
+.tour-info :hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+#content{
+    width: 80%;
+    background: white;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 800px;
+}
+.content-target{
+    margin-left: 24px;
+}
+.content-target h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 8px;
+}
+.content-item{
+    display: flex;
+}
+.content-icon{
+    font-size: 32px;
+    color: rgb(255, 160, 71);
+    padding: 12px 18px;
+}
+.content-right{
+    padding: 8px;
+}
+.content-right:hover{
+    cursor: auto;
+}
+.content-right p,
+.content-right h3{
+    padding: 4px;
+}
+.content-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 48px;
+}
+.content-img{
+    position: absolute;
+    right: 10%;
+    transform: translateY(24px);
+}
+.tour-content1-tittle{
+    padding: 12px;
+}
+.tour-list{
+    padding-top: 24px;
+    font-size: 18px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+.tour-list-info{
+    width: 30%;
+}
+.tour-list-name{
+    padding: 12px;
+    font-size: 24px;
+}
+.tour-list-time{
+    padding-left: 12px;
+    color: #898989;
+}
+.tour-list-price{
+    padding: 12px;
+    padding-top: 12px;
+    color: #898989;
+}
+.tour-list-price a{
+    color: #ffcc00;
+    text-decoration: none;
+}
+.tour-list-info:hover{
+    background: aquamarine;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.tour-content2{
+    margin-top: 48px;
+}
+.tour-content2 h2 >a{
+    color: black;
+    text-decoration: none;
+}
+.content2-item{
+    padding: 20px 0;
+}
+.item-info{
+    width: 400px;
+    height: 110px;
+    display: flex;
+}
+.item-info img{
+    width: 100px;
+    height: 70px;
+}
+.item-info-right a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-left: 10px;
+}
+.item-info-right h4{
+    color: #898989;
+    margin-left: 16px;
+    margin-top: 15px;
+}
+.tour-content2-exp{
+    display: flex;
+}
+.tour-content2-video{
+    width: 30%;
+}
+.tour-content2-video video{
+    width: 450px;
+    margin-top: 24px;
+    border: 2px solid aquamarine;
+}
+.tour-content2{
+    display: flex;
+}
+.tour-content2-left{
+    margin-right: 24px;
+    width: 60%;
+}
+.tour-content2-video a:hover{
+    cursor: text;
+}
+.tour-content2-left a:hover{
+    color: darkorange;
+}
+.footer-email-offer{
+    display: flex;
+    background: #1e88e5;
+    width: 80%;
+    height: 60px;
+    margin-left: 10%;
+    line-height: .8;
+    position: relative;
+    transform: translateY(-50%);
+    border-radius: 12px;
+}
+.footer-email-offer-left{
+    margin-left: 10%;
+    padding-top: 10px;
+}
+.footer-email-offer-left a{
+    color: white;
+    text-decoration: none;
+}
+.footer-email-offer-left a:hover{
+    cursor: text;
+}
+.footer-email-offer-right{
+    display: flex;
+    margin-left: 10%;
+}
+.form{
+    padding: 15px 0 15px 48px;
+}
+.form input{
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+.form .btn{
+    background: #ffcc00;
+    color: white;
+    border: none;
+    width: 100px;  
+}
+.form .btn:hover{
+    cursor: pointer;
+}
+body{
+    position: relative;
+}
+#footer{
+    background: #222222;
+    width: 100%;
+    position: relative;
+    bottom: -900px;
+}
+.footer-widget-left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    padding-top: 24px;
+}
+.footer-widget-left span{
+    font-size: 32px;
+    color: white;
+    padding: 12px;
+}
+.footer-widget-social,
+.footer-widget-left-phone{
+    font-size: 18px;
+    color: white;
+    padding: 8px;
+}
+.footer-widget-left-phone a{
+    color: white;
+    text-decoration: none;
+    padding-left: 12px;
+}
+.footer-widget-social i{
+    padding: 12px;
+}
+.footer-widget{
+    display: flex;
+}
+.footer-widget-right{
+    margin-left: 10%;
+    width: 60%;
+}
+.footer-widget-right ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.footer-widget-right a{
+    color: white;
+    text-decoration: none;
+}
+.lv1{
+    font-size: 28px;
+    padding-top: 24px;
+}
+.lv2 ul{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+}
+.lv2 li{
+    padding: 8px;
+}
+.lv1 li:hover > a{
+    color: #ffcc00;
+}
+.footer-widget-social i:hover,
+.footer-widget-left a:hover{
+    color: #ffcc00;
+    cursor: pointer;
+}
+.clear{
+    clear: both;
+}
+
+
+
